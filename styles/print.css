@@ -1,0 +1,16 @@
+nav, footer, video, figcaption { display: none; }
+
+a[href^="http://"]:after, 
+a[href^="https://"]:after {
+ content: " (" attr(href) ")";
+  font-size: 80%;
+}
+a[href^="#"]:after {
+ content: "you're already here";
+}
+
+.container, article { width: 100%; }
+
+figure { float: left; }
+
+article { margin-top: 0; }
